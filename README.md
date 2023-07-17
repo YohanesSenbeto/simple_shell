@@ -1,6 +1,6 @@
 <h1> 0x16. C - Simple Shell project</h1>
 <h2>General<strong></h2>
-  <ul><br>
+  <ul>
 Who designed and implemented the original Unix operating system
 Who wrote the first version of the UNIX shell
 Who invented the B programming language (the direct predecessor to the C programming language)
