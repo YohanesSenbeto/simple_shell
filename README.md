@@ -34,6 +34,39 @@ All your header files should be include guarded<br>
 Use system calls only when you need to (why?)<br>
 Write a README with the description of your project<br>
 You should have an AUTHORS file at the root of your repository, listing all individuals having contributed content to the repository. Format, see Docker<br>
+  <h1>List of allowed functions and system calls</h1>
+  <ul>
+access (man 2 access)<br>
+chdir (man 2 chdir)<br>
+close (man 2 close)<br>
+closedir (man 3 closedir)<br>
+execve (man 2 execve)<br>
+exit (man 3 exit)<br>
+_exit (man 2 _exit)<br>
+fflush (man 3 fflush)<br>
+fork (man 2 fork)<br>
+free (man 3 free)<br>
+getcwd (man 3 getcwd)<br>
+getline (man 3 getline)<br>
+getpid (man 2 getpid)<br>
+isatty (man 3 isatty)<br>
+kill (man 2 kill)<br>
+malloc (man 3 malloc)<br>
+open (man 2 open)<br>
+opendir (man 3 opendir)<br>
+perror (man 3 perror)<br>
+read (man 2 read)<br>
+readdir (man 3 readdir)<br>
+signal (man 2 signal)<br>
+stat (__xstat) (man 2 stat)<br>
+lstat (__lxstat) (man 2 lstat)<br>
+fstat (__fxstat) (man 2 fstat)<br>
+strtok (man 3 strtok)<br>
+wait (man 2 wait)<br>
+waitpid (man 2 waitpid)<br>
+wait3 (man 2 wait3)<br>
+wait4 (man 2 wait4)<br>
+write (man 2 write)</ul>
 </ul>
 </p><br>
 <h1>Tasks</h1>
@@ -53,7 +86,6 @@ If an executable cannot be found, print an error message and display the prompt 
 Handle errors.
 You have to handle the “end of file” condition (Ctrl+D)
 You don’t have to:
-
 use the PATH
 implement built-ins
 handle special characters : ", ', `, \, *, &, #
