@@ -1,25 +1,25 @@
 #include "main.h"
+
 /**
- * infinite_loop - prompt infinite user
- * Return: int
+ * _getline_command - gets the command line
+ *
+ * Return: the command line
  */
-int infinite_loop(void)
+
+char *_getline_command(void)
 {
-	char *prompt = "(shell)$";
-	char *lineptr;
-	size_t n = 0;
-	ssize_t out;
-	/*loop*/
-	while (1)
-	{
-		printf("%s", prompt);
-		out = getline(&lineptr, &n, stdin);
-		if (out == -1)
-		{
-			printf("disconnecting..../n");
-			return (-1);
-		}
-		printf("%s", lineptr);
-		free(lineptr);
-	}
+    char *input = NULL;
+    size_t size = 0;
+
+    if (isatty(STDIN_FILENO))
+        write(STDOUT_FILENO, "$ ", 2);
+
+    if (getline(&input, &size, stdin) == -1)
+    {
+        free(input);
+        return (NULL);
+    }
+
+    return (input);
 }
+
