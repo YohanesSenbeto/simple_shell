@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _getline_command - gets the command line
+* _getline_command - it prepare the command line
 *
 * Return: the command line
 */
