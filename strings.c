@@ -87,7 +87,7 @@ size_t _strncmp(char *s1, char *s2, size_t n)
 }
 
 /**
- * _strcpy - copies a string
+ * _strcpy - copies a  source string to destination strings
  * @dest: destination of the copy
  * @src: source of the copy
  *
